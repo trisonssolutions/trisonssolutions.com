@@ -1,5 +1,5 @@
 # Core framework
-streamlit
+streamlit==1.49.1
 
 # Data handling
 pandas
