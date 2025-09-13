@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trisons Solutions | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white text-center p-8">
+    <h1 class="text-4xl font-bold">Trisons Solutions</h1>
+    <p class="text-lg">Data Analysis • Forecasting • Project Management</p>
+  </header>
+
+  <!-- Projects -->
+  <main class="max-w-5xl mx-auto p-6 space-y-8">
+    
+    <!-- Project 1 -->
+    <section class="bg-white shadow-md rounded-xl p-6">
+      <h2 class="text-2xl font-semibold">Telecom Data Analysis</h2>
+      <p>Churn analysis using Python, SQL, and Power BI.</p>
+      <img src="assets/telecom.png" alt="Telecom Dashboard" class="mt-4 rounded-lg">
+    </section>
+
+    <!-- Project 2 -->
+    <section class="bg-white shadow-md rounded-xl p-6">
+      <h2 class="text-2xl font-semibold">Financial Forecasting</h2>
+      <p>Revenue forecasting using ARIMA and Prophet models.</p>
+      <div id="forecastChart" class="mt-4"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center p-6 mt-12">
+    © 2025 Trisons Solutions | <a href="mailto:contact@trisonssolutions.com">Contact</a>
+  </footer>
+
+  <!-- Interactive Chart -->
+  <script>
+    const trace = { x: ['Jan','Feb','Mar','Apr'], y: [100,120,130,125], type: 'scatter' };
+    Plotly.newPlot('forecastChart', [trace]);
+  </script>
+</body>
+</html>
