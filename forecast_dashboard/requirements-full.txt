@@ -1,0 +1,18 @@
+# Core framework
+streamlit
+
+# Data handling
+pandas
+numpy
+
+# Visualization
+plotly
+matplotlib
+
+# Machine learning & forecasting
+scikit-learn
+statsmodels
+prophet
+
+# Optional utilities (safe to keep)
+openpyxl      # Excel import/export
