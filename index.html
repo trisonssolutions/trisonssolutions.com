@@ -5,37 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trisons Solutions | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.plotly/plotly-latest.min.js"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white text-center p-8">
-    <h1 class="text-4xl font-bold">Trisons Solutions</h1>
-    <p class="text-lg">Data Analysis • Forecasting • Project Management</p>
+  <header class="bg-blue-900 text-white p-6 flex items-center justify-between">
+    <!-- Logo + Title -->
+    <div class="flex items-center space-x-4">
+      <img src="TrisonsSymbol.png" alt="Trisons Solutions Logo" class="h-12">
+      <div>
+        <h1 class="text-3xl font-bold">Trisons Solutions</h1>
+        <p class="text-sm">Data Analysis • Forecasting • Project Management</p>
+      </div>
+    </div>
+    <!-- Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#projects" class="hover:text-yellow-400">Projects</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="mailto:trisonssolutions@gmail.com" class="hover:text-yellow-400">Contact</a>
+    </nav>
   </header>
 
-  <!-- Projects -->
-  <main class="max-w-5xl mx-auto p-6 space-y-8">
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto p-6 space-y-12">
     
-    <!-- Project 1 -->
-    <section class="bg-white shadow-md rounded-xl p-6">
-      <h2 class="text-2xl font-semibold">Telecom Data Analysis</h2>
-      <p>Churn analysis using Python, SQL, and Power BI.</p>
-      <img src="assets/telecom.png" alt="Telecom Dashboard" class="mt-4 rounded-lg">
+    <!-- Projects Section -->
+    <section id="projects" class="space-y-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+      
+      <!-- Project 1 -->
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-2xl font-semibold">Telecom Data Analysis</h3>
+        <p class="mt-2">Churn analysis using Python, SQL, and Power BI.</p>
+        <img src="assets/telecom.png" alt="Telecom Dashboard" class="mt-4 rounded-lg">
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-2xl font-semibold">Financial Forecasting</h3>
+        <p class="mt-2">Revenue forecasting using ARIMA and Prophet models.</p>
+        <div id="forecastChart" class="mt-4"></div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white shadow-md rounded-xl p-6">
+        <h3 class="text-2xl font-semibold">Technical Project Management</h3>
+        <p class="mt-2">Led cross-functional telecom projects with agile methodologies, 
+        ensuring delivery of scalable solutions on time and within budget.</p>
+      </div>
     </section>
 
-    <!-- Project 2 -->
-    <section class="bg-white shadow-md rounded-xl p-6">
-      <h2 class="text-2xl font-semibold">Financial Forecasting</h2>
-      <p>Revenue forecasting using ARIMA and Prophet models.</p>
-      <div id="forecastChart" class="mt-4"></div>
+    <!-- About Section -->
+    <section id="about" class="bg-white shadow-md rounded-xl p-6">
+      <h2 class="text-3xl font-bold mb-4">About</h2>
+      <p>
+        Trisons Solutions specializes in delivering data-driven insights, 
+        financial forecasting, and technical project management for 
+        telecommunications and technology companies. 
+        With expertise in analytics, visualization, and leadership, 
+        we help organizations turn raw data into actionable strategies.
+      </p>
     </section>
   </main>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white text-center p-6 mt-12">
-    © 2025 Trisons Solutions | <a href="mailto:contact@trisonssolutions.com">Contact</a>
+    © 2025 Trisons Solutions | 
+    <a href="mailto:trisonssolutions@gmail.com" class="hover:text-yellow-400">trisonssolutions@gmail.com</a>
   </footer>
 
   <!-- Interactive Chart -->
